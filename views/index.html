@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/now" type="text/css"/>
+    <script src="https://kit.fontawesome.com/e5483f52e8.js" crossorigin="anonymous"></script>
+    
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="//static.filestackapi.com/filestack-js/3.x.x/filestack.min.js"></script>
+    
+    <script src="/js/index.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script>
+        function validateForm() {
+            var x = document.forms["login"]["username"].value;
+            var y = document.forms["login"]["password"].value;
+            if (x == "" || y == "") {
+                alert("Please fill in all required fields");
+                return false;
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container head-area">
+        <h1>Logo/Name Here</h1>
+    </br>
+        <p>Sign up or sign in to begin.</p>
+
+        <div class="login">
+            <br role="form" name="login" onsubmit=" return validateform()">
+            <div class="input-group field">
+                <div class="input-group-prepend">
+                    <span class="input-group-text"><i class="fas fa-user-tie"></i></span>
+                </div>
+                <input type="text" id="username" class="form-control" placeholder="username or email" />
+            </div><br />
+
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <span class="input-group-text"><i class="fa fa-key icon"></i></span>
+                </div>
+                <input type="Password" id="password" class="form-control" placeholder="password" />
+            </div><br />
+            <div class="checkbox">
+                <label><input type="checkbox" value="" /> Remember me</label>
+            </div><br />
+            <button type="submit" class="btn btn-success"><span class="glyphicon glyphicon-off"></span> Login</button>
+
+            <!--- <button type="submit" class="btn btn-info"><span class="glyphicon glyphicon-remove"></span>Login with
+                Facebook </button><br />-->
+            </br>
+            </br>
+            <center>
+                <div style="border:.5px solid white;height:1px;width:300px;"></div>
+            </center>
+
+
+            <div class="signup">
+                </br>
+                <p>Don't have an Account!</p>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal3">
+                    Sign up here
+                </button>
+                </br>
+                </br>
+                <!--<p>Forgot <a href="#">Password?</a></p>-->
+                <div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog"
+                    aria-labelledby="exampleModal3Label" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <form class="form-horizontal">
+                                    <div class="close-x">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">X</button>
+                                    </div>
+                                    <div class="heading">
+                                        <h4 class="form-heading">Sign Up</h4>
+                                    </div>
+
+                                    <div class="control-group">
+                                        <label class="control-label" for="inputFirst">First
+                                            Name</label>
+
+                                        <div class="controls">
+                                            <input id="inputFirst" placeholder="" type="text">
+                                        </div>
+                                    </div>
+
+                                    <div class="control-group">
+                                        <label class="control-label" for="inputLast">Last
+                                            Name</label>
+
+                                        <div class="controls">
+                                            <input id="inputLast" placeholder="" type="text">
+                                        </div>
+                                    </div>
+
+                                    <div class="control-group">
+                                        <label class="control-label" for="inputEmail">Email</label>
+
+                                        <div class="controls">
+                                            <input id="inputEmail" placeholder="" type="text">
+                                        </div>
+                                    </div>
+
+                                    <div class="control-group">
+                                        <label class="control-label" for="inputUser">Username</label>
+
+                                        <div class="controls">
+                                            <input id="inputUser" placeholder="" type="text">
+                                        </div>
+                                    </div>
+
+                                    <div class="control-group">
+                                        <label class="control-label" for="inputPassword">Password</label>
+
+                                        <div class="controls">
+                                            <input id="inputPassword" placeholder="min. 8 characters" type="password">
+                                        </div>
+                                    </div>
+
+                                    <div class="control-group">
+                                        <div class="controls">
+                                            <button class="btn btn-success" type="submit" a href="profile">Sign Up</button>
+                                        </div>
+                                    </div>
+
+                                    <div class="alert alert-info">
+                                        <button class="close" data-dismiss="alert" type="button">×</button>
+                                        <strong>Confirmation:</strong>
+                                        A confirmation email has been sent to your
+                                        email.<br>
+                                        Thank you for your registration.
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

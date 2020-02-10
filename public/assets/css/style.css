@@ -1,0 +1,700 @@
+  body {
+      font-family: 'NowExtraLight';
+
+  }
+  
+  .container {
+      text-align: center;
+  }
+
+  /* ========================== LOGIN PAGE CSS ========================== */
+
+  .head-area p {
+      font-size: 20px;
+  }
+
+  h1 {
+    margin: auto;
+  }
+
+  .login {
+      background-color: #46185f;
+      border-radius: 15px;
+      text-align: center;
+      height: 450px;
+      width: 400px;
+      margin: 0 auto;
+  }
+
+  .input-group {
+      width: 300px;
+      margin: 0 auto;
+  }
+
+  .field {
+      margin-top: 25px;
+
+  }
+
+  .checkbox label {
+      color: #ffffff;
+  }
+
+  .btn {
+        background-color: #297ca0;
+        color: #ffffff;
+        border-radius: 10px;
+        border: none;
+  }
+
+  .btn:hover {
+      background-color: #e9ea77;
+      color: #414042;
+  }
+
+  .signup p {
+        color: #ffffff;
+  }
+
+  /* ========================== SIGN UP MODAL CSS ========================== */
+
+  .modal {
+      margin-top: 50px;
+  }
+
+  .form-horizontal .heading .form-heading {
+      font-size: 32px;
+  }
+
+  .modal-body {
+      padding: 10px;
+  }
+
+  .close-x {
+      text-align: right;
+  }
+
+  .close-x .btn {
+        color: #46185f;
+        font-size: 24px;
+        background-color: #ffffff;
+  }
+
+  .control-group {
+      margin-top: 5px;
+  }
+
+  .controls .btn {
+      margin-top: 10px;
+  }
+
+  label {
+      margin-bottom: 0;
+  }
+
+  .controls {
+      margin-bottom: 15px;
+  }
+
+  /* ========================== NAV HEADER BAR CSS ========================== */
+  body {
+      padding: 60px 0px;
+  }
+
+  .navbar {
+      background-color: #46185f;
+      margin-bottom: 20px;
+  }
+
+  .navbar-default .navbar-brand {
+      color: #ffffff;
+  }
+
+  .navbar-default .navbar-nav .active a {
+      color: #46185f;
+  }
+
+  .navbar-default .navbar-nav li a {
+    color: #ffffff;
+}
+
+.navbar-default .navbar-nav li a:hover {
+    color: #e9ea77;
+}
+
+  .navbar-collapse {
+      position: relative;
+      padding-top: 30px !important;
+      max-height: 270px;
+  }
+
+  .navbar-collapse form[role="search"] {
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      width: 100%;
+      padding: 0px;
+      margin: 0px;
+      z-index: 0;
+  }
+
+  .navbar-collapse form[role="search"] button,
+  .navbar-collapse form[role="search"] input {
+      padding: 8px 12px;
+      border-radius: 0px;
+      border-width: 0px;
+      color: #ffffff;
+      box-shadow: none;
+      outline: none;
+  }
+
+  .navbar-collapse form[role="search"] input {
+      padding: 16px 12px;
+      font-size: 14pt;
+      font-style: italic;
+      color: rgb(160, 160, 160);
+      box-shadow: none;
+  }
+
+  .navbar-collapse form[role="search"] button[type="reset"] {
+      display: none;
+  }
+
+  @media (min-width: 768px) {
+      .navbar-collapse {
+          padding-top: 0px !important;
+          padding-right: 38px !important;
+      }
+
+      .navbar-collapse form[role="search"] {
+          width: 38px;
+      }
+
+      .navbar-collapse form[role="search"] button,
+      .navbar-collapse form[role="search"] input {
+          padding: 15px 12px;
+      }
+
+      .navbar-collapse form[role="search"] input {
+          padding: 25px 12px;
+          font-size: 18pt;
+          opacity: 0;
+          display: none;
+      }
+
+      .navbar-collapse form[role="search"].active {
+          width: 100%;
+      }
+
+      .navbar-collapse form[role="search"].active button,
+      .navbar-collapse form[role="search"].active input {
+          display: table-cell;
+          opacity: 1;
+      }
+
+      .navbar-collapse form[role="search"].active input {
+          width: 100%;
+      }
+  }
+
+  .input-group-btn .btn{
+    background-color: #46185f;
+}
+
+  /* ========================== END NAV HEADER ========================== */
+
+  /* ========================== SHOP PAGE CSS ========================== */
+
+   .top-nav a {
+       color: #46185f;
+   } 
+
+   .top-nav a:hover {
+       color: #297ca0;
+   }
+
+  .product-grid {
+      font-family: Raleway, sans-serif;
+      text-align: center;
+      padding: 0 0 72px;
+      border: 1px solid rgba(0, 0, 0, .1);
+      overflow: hidden;
+      position: relative;
+      z-index: 1
+  }
+
+  .product-grid .product-image {
+      position: relative;
+      transition: all .3s ease 0s
+  }
+
+  .product-grid .product-image a {
+      display: block
+  }
+
+  .product-grid .product-image img {
+      width: 100%;
+      height: auto
+  }
+
+  .product-grid .pic-1 {
+      opacity: 1;
+      transition: all .3s ease-out 0s
+  }
+
+  .product-grid:hover .pic-1 {
+      opacity: 1
+  }
+
+  .product-grid .pic-2 {
+      opacity: 0;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transition: all .3s ease-out 0s
+  }
+
+  .product-grid:hover .pic-2 {
+      opacity: 1
+  }
+
+  .product-grid .social {
+      width: 150px;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      opacity: 0;
+      transform: translateY(-50%) translateX(-50%);
+      position: absolute;
+      top: 60%;
+      left: 50%;
+      z-index: 1;
+      transition: all .3s ease 0s
+  }
+
+  .product-grid:hover .social {
+      opacity: 1;
+      top: 50%
+  }
+
+  .product-grid .social li {
+      display: inline-block
+  }
+
+  .product-grid .social li a {
+      color: #fff;
+      background-color: #333;
+      font-size: 16px;
+      line-height: 40px;
+      text-align: center;
+      height: 40px;
+      width: 40px;
+      margin: 0 2px;
+      display: block;
+      position: relative;
+      transition: all .3s ease-in-out
+  }
+
+  .product-grid .social li a:hover {
+      color: #fff;
+      background-color: #ef5777
+  }
+
+  .product-grid .social li a:after,
+  .product-grid .social li a:before {
+      content: attr(data-tip);
+      color: #fff;
+      background-color: #000;
+      font-size: 12px;
+      letter-spacing: 1px;
+      line-height: 20px;
+      padding: 1px 5px;
+      white-space: nowrap;
+      opacity: 0;
+      transform: translateX(-50%);
+      position: absolute;
+      left: 50%;
+      top: -30px
+  }
+
+  .product-grid .social li a:after {
+      content: '';
+      height: 15px;
+      width: 15px;
+      border-radius: 0;
+      transform: translateX(-50%) rotate(45deg);
+      top: -20px;
+      z-index: -1
+  }
+
+  .product-grid .social li a:hover:after,
+  .product-grid .social li a:hover:before {
+      opacity: 1
+  }
+
+  .product-grid .product-discount-label,
+  .product-grid .product-new-label {
+      color: #fff;
+      background-color: #ef5777;
+      font-size: 12px;
+      text-transform: uppercase;
+      padding: 2px 7px;
+      display: block;
+      position: absolute;
+      top: 10px;
+      left: 0
+  }
+
+  .product-grid .product-discount-label {
+      background-color: #333;
+      left: auto;
+      right: 0
+  }
+
+  .product-grid .rating {
+      color: #FFD200;
+      font-size: 12px;
+      padding: 12px 0 0;
+      margin: 0;
+      list-style: none;
+      position: relative;
+      z-index: -1
+  }
+
+  .product-grid .rating li.disable {
+      color: rgba(0, 0, 0, .2)
+  }
+
+  .product-grid .product-content {
+      background-color: #fff;
+      text-align: center;
+      padding: 12px 0;
+      margin: 0 auto;
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -27px;
+      z-index: 1;
+      transition: all .3s
+  }
+
+  .product-grid:hover .product-content {
+      bottom: 0
+  }
+
+  .product-grid .title {
+      font-size: 13px;
+      font-weight: 400;
+      letter-spacing: .5px;
+      text-transform: capitalize;
+      margin: 0 0 10px;
+      transition: all .3s ease 0s
+  }
+
+  .product-grid .title a {
+      color: #828282
+  }
+
+  .product-grid .title a:hover,
+  .product-grid:hover .title a {
+      color: #ef5777
+  }
+
+  .product-grid .price {
+      color: #333;
+      font-size: 17px;
+      font-family: Montserrat, sans-serif;
+      font-weight: 700;
+      letter-spacing: .6px;
+      margin-bottom: 8px;
+      text-align: center;
+      transition: all .3s
+  }
+
+  .product-grid .price span {
+      color: #999;
+      font-size: 13px;
+      font-weight: 400;
+      margin-left: 3px;
+      display: inline-block
+  }
+
+  .product-grid .add-to-cart {
+      color: #000;
+      font-size: 13px;
+      font-weight: 600
+  }
+
+  @media only screen and (max-width:990px) {
+      .product-grid {
+          margin-bottom: 30px
+      }
+  }
+
+  .top-nav {
+      margin-top: 50px;
+      margin-bottom: 15px;
+  }
+
+  .nav-item {
+      display: inline;
+      margin-right: 20px;
+
+  }
+
+  .text-center .view-cart {
+      color: #46185f;
+
+  }
+
+  .view-cart:hover {
+      color: #e9ea77;
+  }
+
+  .shop-by {
+      font-size: 28px;
+  }
+
+  ul.dropdown-cart {
+      min-width: 250px;
+  }
+
+  ul.dropdown-cart li .item {
+      display: block;
+      padding: 3px 10px;
+      margin: 3px 0;
+  }
+
+  ul.dropdown-cart li .item:hover {
+      background-color: #f3f3f3;
+  }
+
+  ul.dropdown-cart li .item:after {
+      visibility: hidden;
+      display: block;
+      font-size: 0;
+      content: " ";
+      clear: both;
+      height: 0;
+  }
+
+  ul.dropdown-cart li .item-left {
+      float: left;
+  }
+
+  ul.dropdown-cart li .item-left img,
+  ul.dropdown-cart li .item-left span.item-info {
+      float: left;
+  }
+
+  ul.dropdown-cart li .item-left span.item-info {
+      margin-left: 10px;
+  }
+
+  ul.dropdown-cart li .item-left span.item-info span {
+      display: block;
+  }
+
+  ul.dropdown-cart li .item-right {
+      float: right;
+  }
+
+  ul.dropdown-cart li .item-right button {
+      margin-top: 14px;
+  }
+
+  .item-left img {
+      width: 50px;
+      height: 60px;
+  }
+
+  /* ========================== END SHOP PAGE ========================== */
+
+  /* ========================== PROFILE PAGE CSS ========================== */
+
+  .tab-content #profile .row {
+      margin-top: 40px;
+  }
+  .my-cart {
+      margin-left: 30px;
+  }
+
+  .img-circle {
+      width: 200px;
+      height: 200px;
+      border: 1px solid black;
+  }
+
+  .custom-file-input {
+      margin: 0 auto;
+      margin-top: 15px;
+  }
+
+  #myFile {
+      margin: 0 auto;
+  }
+
+  .profile-pic {
+      margin-top: 15px;
+  }
+
+
+  .about {
+
+      text-align: left;
+      margin-top: 15px;
+      padding-left: 60px;
+      padding-top: 15px;
+      height: 200px;
+
+  }
+
+  .about h3 {
+      font-size: 40px;
+      color: #46185f;
+      font-family: "NowLight";
+  }
+
+  .about h4 {
+      color: #46185f;
+      font-family: "NowLight";
+      font-size: 24px;
+  }
+
+  .add-item {
+      margin-top: 15px;
+      height: 200px;
+  }
+
+  .add-item h6 {
+      font-size: 26px;
+      padding-top: 40px;
+  }
+
+  .add-icon img {
+      margin: 0 auto;
+      width: 50px;
+      height: 55px;
+  }
+
+  .listings {
+      margin-top: 20px;
+  }
+  
+  .listings h2 {
+      text-align: left;
+      color: #46185f;
+      font-family: "NowLight";
+  }
+
+
+  .item-pic img {
+      width: 80px;
+      height: 80px;
+  }
+
+  #item-desc {
+      height: 80px;
+  }
+
+  .item-modal {
+      margin-bottom: 20px;
+  }
+
+  .close {
+      text-align: right;
+  }
+
+
+  /* ========================== END PROFILE PAGE ========================== */
+
+  /* ========================== CHECKOUT PAGE CSS ========================== */
+
+  .order {
+      margin-top: 75px;
+  }
+
+  .panel-info .panel-heading {
+      height: 40px;
+      background-color: #46185f;
+      color: #ffffff;
+      border: none;
+  }
+
+  .panel-info {
+    border: none;
+  }
+
+  .afix-1 {
+      color: #ffffff;
+
+  }
+
+  .afix-1:hover {
+      color: #e9ea77;
+  }
+
+  .afix-1:visited {
+    color: #ffffff;
+  }
+
+  .panel-body {
+      border: 1px solid #46185f;
+  }
+  
+  
+  .submit-button {
+      margin-top: 10px;
+  }
+
+  .total {
+      font-family: "NowLight";
+      font-size: 22px;
+      color: #46185f;
+  }
+
+  img-responsive {
+      width: 50px;
+      height: 60px;
+      padding-bottom: 50px;
+    
+  }
+
+  .panel {
+      width: 400px;
+      height: auto;
+  }
+
+  .item-info {
+      margin-top: 20px;
+  }
+
+    /* ========================== END CHECKOUT PAGE CSS ========================== */
+
+
+    /* ========================== CONFIRMATION PAGE CSS ========================== */
+
+    .confirm {
+        margin-top: 120px;
+    }
+
+    .confirm h3 {
+        font-family: "NowLight";
+        font-size: 36px;
+        color: #46185f;
+    }
+
+    .view-cart {
+        background-color: #46185f;
+        padding: 0px;
+    }
+    
+    .view-cart:hover {
+        color: #e9ea77;
+        background-color: #46185f;
+    }
+
+    .empty {
+        text-align: center; 
+        margin-top: 10px;
+    }
